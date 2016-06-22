@@ -1,8 +1,15 @@
-<ion-view title="firmar" hide-back-button="true" id="page2" class=" ">
+<ion-view title="Iniciar sesión de usuario" hide-back-button="true" id="page2" class=" ">
     <ion-content padding="true" class="has-header">
-        <p id="firmar-markdown1" style="color:#000000;" class=" ">Some friendly
-            <strong>markdown</strong>
+        <p>
+            Este es un APP de prueba para el <strong>inicio de sesión</strong> 
+            desde un perfil social, para almacenarlo en la BD de la aplicación.
         </p>
-        <button id="firmar-button2" class=" button button-positive  button-block icon-left ion-social-facebook ">Iniciar sesión</button>
+        <p>Por favor, inicie sesión pulsando el botón correspondiente.</p>
+        <hr>
+        <button id="firmar-button2" style="margin: 50px 0" ng-click="loginFB()" 
+        class=" button button-positive  button-block icon-left ion-social-facebook ">
+        Iniciar sesión</button>
+        <hr>
+        <p style="font-size: 90%">Creado por: Fernando Magrosoto V.</p>
     </ion-content>
 </ion-view>

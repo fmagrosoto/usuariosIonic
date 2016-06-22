@@ -1,33 +1,36 @@
-<ion-view title="completar" hide-back-button="true" id="page3" class=" ">
+<ion-view title="Completar registro" hide-back-button="true" id="page3" class=" ">
     <ion-content padding="true" class="has-header">
-        <p id="completar-markdown2" style="color:#000000;" class=" ">Some friendly
-            <strong>markdown</strong>
+        <p>Es necesario completar el registro para darse de alta 
+            en esta app.
         </p>
+        <p>Por favor, llene los siguientes campos.</p>
         <form id="completar-form1" class="list ">
-            <label class="item item-input " id="completar-input1" name="nombre">
+            <label class="item item-input " id="completar-input1">
                 <span class="input-label">Nombre:</span>
-                <input type="text" placeholder="Nombre completo">
+                <input type="text" placeholder="Nombre completo" ng-model="usuario.nombre">
             </label>
-            <label class="item item-input " id="completar-input2" name="correo">
+            <label class="item item-input " id="completar-input2">
                 <span class="input-label">Correo:</span>
-                <input type="email" placeholder="Correo electrónico">
+                <input type="email" placeholder="Correo electrónico" ng-model="usuario.correo">
             </label>
-            <label class="item item-input " id="completar-input3" name="pais">
+            <label class="item item-input " id="completar-input3">
                 <span class="input-label">País:</span>
-                <input type="text" placeholder="País de origen">
+                <input type="text" placeholder="País de origen" ng-model="usuario.pais">
             </label>
-            <label class="item item-select " id="completar-select1" name="sexo">
+            <label class="item item-select " id="completar-select1">
                 <span class="input-label">Sexo:</span>
-                <select>
-                    <option>Masculino</option>
-                    <option>Femenino</option>
+                <select ng-model="usuario.sexo">
+                    <option value='Masculino'>Masculino</option>
+                    <option value='Femenino'>Femenino</option>
                 </select>
             </label>
-            <label class="item item-input " id="completar-input4" name="edad">
+            <label class="item item-input " id="completar-input4">
                 <span class="input-label">Edad</span>
-                <input type="number" placeholder="Edad">
+                <input type="number" placeholder="Edad" ng-model="usuario.edad">
             </label>
         </form>
-        <button id="completar-button3" class=" button button-positive  button-block icon-left ion-android-person-add ">Completar registro</button>
+        <button type="submit" id="completar-button3" ng-click="grabarDatos()" 
+        class="button button-positive button-block icon-left ion-android-person-add">
+        Completar registro</button>
     </ion-content>
 </ion-view>

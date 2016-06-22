@@ -10,19 +10,22 @@ angular.module('app.routes', [])
     
   
 
-      .state('bienvenido', {
+    .state('bienvenido', {
+    cache: false,
     url: '/bienvenido',
     templateUrl: 'templates/bienvenido.html',
     controller: 'bienvenidoCtrl'
   })
 
   .state('firmar', {
+    cache: false,
     url: '/firmar',
     templateUrl: 'templates/firmar.html',
     controller: 'firmarCtrl'
   })
 
   .state('completar', {
+    cache: false,
     url: '/completar',
     templateUrl: 'templates/completar.html',
     controller: 'completarCtrl'

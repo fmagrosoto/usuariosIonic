@@ -6,5 +6,12 @@ angular.module('app.services', [])
 
 .service('BlankService', [function(){
 
+}])
+
+.service('usuario', [function(){
+    this.usrNombre = null;
+    this.usrID = null;
+    this.usrFB = null;
+    this.esUsuario = false;
 }]);
 

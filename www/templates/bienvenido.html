@@ -1,13 +1,15 @@
-<ion-view title="bienvenido" hide-back-button="true" id="page1" class=" ">
+<ion-view title="Bienvenido" hide-back-button="true" id="page1" class=" ">
     <ion-content padding="true" class="has-header">
-        <div style="margin: 0px; line-height: 250px; text-align: center; background-color: rgb(232, 235, 239);">
-            <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
-        </div>
+        <p class="centrado">
+            <img id="fbpic" src="http://placehold.it/250" alt="">
+        </p>
         <ion-list id="bienvenido-list1" class=" ">
-            <ion-item id="bienvenido-list-item1" class="  ">Nombre</ion-item>
-            <ion-item id="bienvenido-list-item2" class="  ">ID</ion-item>
-            <ion-item id="bienvenido-list-item3" class="  ">Facebook</ion-item>
+            <ion-item id="bienvenido-list-item1"></ion-item>
+            <ion-item id="bienvenido-list-item2"></ion-item>
+            <ion-item id="bienvenido-list-item3"></ion-item>
         </ion-list>
-        <button id="bienvenido-button1" class=" button button-assertive  button-block icon-left ion-log-out ">Cerrar sesión</button>
+        <button id="bienvenido-button1" ng-click="cerrarSesion()" 
+        class=" button button-assertive  button-block icon-left ion-log-out ">
+        Cerrar sesión</button>
     </ion-content>
 </ion-view>
